@@ -1,20 +1,95 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project Title</title>
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
     <!-- build:css -->
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
 </head>
+
 <body>
-    <h1>Hello world</h1>
+    <header>
+        <div class="container">
+            <div class="topbar">
+                <div class="topbar__left">
+                    <div class="topbar__item">
+                        <i class="fas fa-phone"></i>
+                        <p>+020 12345678</p>
+                    </div>
+                    <div class="topbar__item">
+                        <i class="fas fa-envelope"></i>
+                        <p>hello@homeeurope.com</p>
+                    </div>
+                </div>
+                <div class="topbar__right">
+                    <div class="topbar__item">
+                        <p>London</p>
+                        <i class="fas fa-cloud-sun-rain"></i>
+                        <p>18 &deg;</p>
+                    </div>
+                    <div class="topbar__item">
+                        <p>| EN</p>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="navigation">
+                <img src="img/logo.png" alt="logo" class="navigation__logo">
+
+                <div class="navigation__menu">
+                    <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+                    <label for="nav-toggle" class="navigation__button">
+                        <div class="navigation__icon">&nbsp;</div>
+                    </label>
+
+                    <div class="navigation__background">&nbsp;</div>
+
+                    <nav class="navigation__nav">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">Home</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">About us</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">Our apartments</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">Reviews</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">Blog</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">Contact us</a>
+                            </li>
+                            <li class="navigation__item navigation__item--bordered">
+                                <a href="#" class="navigation__link">Sign up</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
 
     <!-- build:js -->
-    <script src="js/app.js"></script>
+
+    <script src="js/siema.min.js"></script>
+    <script src="js/menuToggle.js"></script>
     <!-- endbuild -->
 </body>
+
 </html>

@@ -1,1 +1,6 @@
-/* e.g. .margin-big */
+.container {
+    @media screen and (min-width: $break-lg) {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}

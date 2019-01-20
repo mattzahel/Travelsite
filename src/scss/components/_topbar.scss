@@ -1,0 +1,46 @@
+.topbar {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    border-bottom: 1px solid #f3f3f3;
+    margin: 0 auto;
+
+    @media screen and (min-width: $break-sm) {
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        justify-content: space-between;
+        
+        @media screen and (min-width: $break-sm) {
+            padding-left: 2rem;
+        }
+    }
+
+    &__right {
+        display: none;
+
+        @media screen and (min-width: $break-sm) {
+            display: flex;
+            padding-right: 2rem;
+        }
+    }
+
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: 1.4rem;
+
+        & i {
+            margin: 0 .5rem;
+            color: #333;
+        }
+
+        &:first-child {
+            margin-right: 1rem;
+        }
+    }
+}
