@@ -1,0 +1,28 @@
+.btn {
+    background: transparent;
+    border: 2px solid $color-dark;
+    color: $color-dark;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    font-size: calc( 0.04 * 100vw);
+    cursor: pointer;
+    transition: all .3s;
+
+    @media screen and (min-width: $break-md) {
+        font-size: 1.8rem;
+    }
+
+
+    &--info {
+        border: 2px solid #fff;
+        color: #fff;
+        margin-top: 2rem;
+
+        &:hover {
+            background-color: #fff;
+            color: $color-primary;
+            transform: scale(1.05);
+            box-shadow: 0 5px 10px $color-dark;
+        }
+    }
+}

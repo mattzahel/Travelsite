@@ -1,0 +1,70 @@
+.slider {
+    position: relative;
+    max-height: calc(100vh - 14rem);
+
+
+    .siema {
+        max-height: calc(100vh - 14rem);
+    
+            
+        .slide {
+            position: relative;
+
+            & img {
+                filter: brightness(.8);
+                width: 100%;
+                max-height: calc(100vh - 14rem);
+            }
+            
+            &__text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: #fff;
+                text-align: center;
+
+                &--small {
+                    font-size: calc( 0.03 * 100vw + 10px );
+
+                    @media screen and (min-width: $break-lg) {
+                        font-size: 5rem;
+                    }
+                }
+                &--big {
+                    text-transform: uppercase;
+                    font-size: calc( 0.04 * 100vw + 10px );
+                    font-weight: 700;
+
+                    @media screen and (min-width: $break-lg) {
+                        font-size: 7rem;
+                    }
+                }
+            }
+        }
+       
+    }
+
+    &__btn {
+        position: absolute;
+        width: 6rem;
+        background: transparent;
+        border: none;
+        height: 100%;
+        font-size: 3rem;
+        color: $color-light;
+        transform: translateY(-50%);
+        z-index: 3;
+        outline: none;
+        cursor: pointer;
+
+       &--left {
+           left: 0;
+           top: 50%;
+       }
+       &--right {
+            right: 0;
+            top: 50%;
+        }
+    }
+}

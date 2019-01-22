@@ -225,6 +225,83 @@ body {
   .navigation__link:hover, .navigation__link:active {
     color: #4588f2; } }
 
+.slider {
+  position: relative;
+  max-height: calc(100vh - 14rem); }
+  .slider .siema {
+    max-height: calc(100vh - 14rem); }
+    .slider .siema .slide {
+      position: relative; }
+      .slider .siema .slide img {
+        -webkit-filter: brightness(0.8);
+                filter: brightness(0.8);
+        width: 100%;
+        max-height: calc(100vh - 14rem); }
+      .slider .siema .slide__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center; }
+        .slider .siema .slide__text--small {
+          font-size: calc( 0.03 * 100vw + 10px); }
+          @media screen and (min-width: 1200px) {
+            .slider .siema .slide__text--small {
+              font-size: 5rem; } }
+        .slider .siema .slide__text--big {
+          text-transform: uppercase;
+          font-size: calc( 0.04 * 100vw + 10px);
+          font-weight: 700; }
+          @media screen and (min-width: 1200px) {
+            .slider .siema .slide__text--big {
+              font-size: 7rem; } }
+  .slider__btn {
+    position: absolute;
+    width: 6rem;
+    background: transparent;
+    border: none;
+    height: 100%;
+    font-size: 3rem;
+    color: #f3f3f3;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 3;
+    outline: none;
+    cursor: pointer; }
+    .slider__btn--left {
+      left: 0;
+      top: 50%; }
+    .slider__btn--right {
+      right: 0;
+      top: 50%; }
+
+.btn {
+  background: transparent;
+  border: 2px solid #333;
+  color: #333;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  font-size: calc( 0.04 * 100vw);
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  @media screen and (min-width: 768px) {
+    .btn {
+      font-size: 1.8rem; } }
+  .btn--info {
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 2rem; }
+    .btn--info:hover {
+      background-color: #fff;
+      color: #4588f2;
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+      -webkit-box-shadow: 0 5px 10px #333;
+              box-shadow: 0 5px 10px #333; }
+
 /* e.g. header */
 /* e.g. home page */
 

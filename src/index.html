@@ -8,7 +8,7 @@
     <title>Travel Website</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <!-- build:css -->
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
@@ -80,15 +80,59 @@
                     </nav>
                 </div>
             </div>
+        </div>    
+        <div class="slider">
+            <div class="siema">
+                <div class="slide">
+                    <picture>
+                        <source media="(min-width: 576px)" srcset="img/slider-1.jpg">
+                        <img src="img/slider-1-small.jpg" alt="slider-image-1-small">
+                    </picture>
+                    <div class="slide__text">
+                        <p class="slide__text--small">Save 10% on</p>
+                        <p class="slide__text--big">Europe &amp; Britain</p>
+                        <button class="btn btn--info">Learn more</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <picture>
+                        <source media="(min-width: 576px)" srcset="img/slider-2.jpg">
+                        <img src="img/slider-2-small.jpg" alt="slider-image-2-small">
+                    </picture>
+                    <div class="slide__text">
+                        <p class="slide__text--small">Venice</p>
+                        <p class="slide__text--big">Now from 800$</p>
+                        <button class="btn btn--info">Learn more</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <picture>
+                        <source media="(min-width: 576px)" srcset="img/slider-3.jpg">
+                        <img src="img/slider-3-small.jpg" alt="slider-image-3-small">
+                    </picture>
+                    <div class="slide__text">
+                        <p class="slide__text--small">Book now</p>
+                        <p class="slide__text--big">Unforgettable Holidays</p>
+                        <button class="btn btn--info">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <button class="slider__btn slider__btn--left prev">
+                    <i class="fas fa-angle-left"></i>
+                </button>
+                <button class="slider__btn slider__btn--right next">
+                    <i class="fas fa-angle-right"></i>
+                </button>
         </div>
-
-
     </header>
 
+    <section id="panel">
+        
+    </section>
     <!-- build:js -->
-
-    <script src="js/siema.min.js"></script>
     <script src="js/menuToggle.js"></script>
+    <script src="js/siema.min.js"></script>
+    <script src="js/slider.js"></script>
     <!-- endbuild -->
 </body>
 
