@@ -1,1 +1,43 @@
-/* e.g. .heading-primary */
+.double-heading {
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    min-height: 15rem;
+    @media screen and (min-width: $break-md) {
+        min-height: 20rem;          
+    }
+    @media screen and (min-width: $break-lg) {
+        min-height: 25rem;
+    }
+
+    & h2 {
+        width: 100%;
+        font-size: calc(0.02 * 100vw + 1rem);
+        color: $grey-dark;
+        z-index: 2;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media screen and (min-width: $break-lg) {
+            top: 35%;
+            font-size: 3.2rem;            
+        }
+    }
+    & p {
+        width: 100%;
+        font-size: calc(0.04 * 100vw + 1rem);
+        font-weight: 700;
+        color: $grey-light;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media screen and (min-width: $break-lg) {
+            top: 20%;
+            font-size: 6rem;            
+        }
+    }
+}

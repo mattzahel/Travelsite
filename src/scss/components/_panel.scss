@@ -1,5 +1,6 @@
 .panel-wrapper {
     position: relative;
+    min-height: 25rem;
 }
 
 .panel {
@@ -29,6 +30,10 @@
         grid-column-gap: 1rem;
     }
     @media screen and (min-width: $break-lg) {
+        top: -10rem;
+        max-width: 100rem;
+    }
+    @media screen and (min-width: 1400px) {
         top: -15rem;
         max-width: 100rem;
     }
