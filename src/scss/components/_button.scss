@@ -1,6 +1,7 @@
 .btn {
     background: transparent;
     border: 2px solid $color-dark;
+    border-radius: 3px;
     color: $color-dark;
     padding: 1rem 1.5rem;
     text-transform: uppercase;
@@ -12,7 +13,10 @@
         font-size: 1.8rem;
     }
 
-
+    i {
+        margin-right: 1rem;
+    }
+    
     &--info {
         border: 2px solid #fff;
         color: #fff;
@@ -23,6 +27,20 @@
             color: $color-primary;
             transform: scale(1.05);
             box-shadow: 0 5px 10px $color-dark;
+        }
+    }
+    &--action {
+        background-color: $color-primary;
+        color: #fff;
+        border: none;    
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 10px rgba(102, 102, 102, .5);
+        }
+
+        @media screen and (min-width: $break-md) {
+            font-size: 1.4rem;
         }
     }
 }

@@ -165,6 +165,11 @@
 
             &--bordered {
                 border: 2px solid $color-dark;
+                transition: all .2s;
+
+                &:hover {
+                    border: 2px solid $color-primary;
+                }
             }
         }
         &__link {
