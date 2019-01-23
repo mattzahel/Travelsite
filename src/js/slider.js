@@ -3,10 +3,18 @@ const mainSiema = new Siema({
     duration: 700,
     draggable: true,
     loop: true
-    // perPage: { 320: 3, 768: 5}
 });
-
 setInterval(() => mainSiema.next(), 5000);
+document.querySelector('#main-prev').addEventListener('click', () => mainSiema.prev());
+document.querySelector('#main-next').addEventListener('click', () => mainSiema.next());
 
-document.querySelector('.prev').addEventListener('click', () => mainSiema.prev());
-document.querySelector('.next').addEventListener('click', () => mainSiema.next());
+
+const exploreSiema = new Siema({
+    selector: "#siema-explore",
+    draggable: true,
+    loop: true,
+    startIndex: 0,
+    perPage: { 320: 2, 768: 4, 1200: 5}
+})
+document.querySelector('#explore-prev').addEventListener('click', () => exploreSiema.prev());
+document.querySelector('#explore-next').addEventListener('click', () => exploreSiema.next());
