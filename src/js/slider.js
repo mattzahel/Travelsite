@@ -1,10 +1,12 @@
-const mySiema = new Siema({
+const mainSiema = new Siema({
+    selector: "#siema-header",
     duration: 700,
     draggable: true,
     loop: true
+    // perPage: { 320: 3, 768: 5}
 });
 
-// setInterval(() => mySiema.next(), 5000);
+setInterval(() => mainSiema.next(), 5000);
 
-document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
-document.querySelector('.next').addEventListener('click', () => mySiema.next());
+document.querySelector('.prev').addEventListener('click', () => mainSiema.prev());
+document.querySelector('.next').addEventListener('click', () => mainSiema.next());
