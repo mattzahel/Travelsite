@@ -1,4 +1,4 @@
-.double-heading {
+.section-heading {
     text-transform: uppercase;
     position: relative;
     text-align: center;
@@ -40,4 +40,8 @@
             font-size: 6rem;            
         }
     }
+}
+
+.text-highlight {
+    color: $color-primary;
 }

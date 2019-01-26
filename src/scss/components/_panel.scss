@@ -1,6 +1,13 @@
 .panel-wrapper {
     position: relative;
-    min-height: 25rem;
+    min-height: 15rem;
+
+    @media screen and (min-width: $break-md) {
+        min-height: 25rem;
+    }
+    @media screen and (min-width: $break-lg) {
+        min-height: 20rem;
+    }
 }
 
 .panel {
@@ -35,7 +42,7 @@
     }
     @media screen and (min-width: 1400px) {
         top: -15rem;
-        max-width: 100rem;
+        min-width: 120rem;
     }
 
     &__heading {
