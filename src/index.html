@@ -8,7 +8,7 @@
     <title>Travel Website</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
     <!-- build:css -->
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
@@ -154,9 +154,9 @@
                     <i class="fas fa-door-open"></i>
                     <select id="input-room" required>
                         <option value="1" selected="selected">1 room</option>
-                        <option value="2">2 room</option>
-                        <option value="3">3 room</option>
-                        <option value="4">3 room</option>
+                        <option value="2">2 rooms</option>
+                        <option value="3">3 rooms</option>
+                        <option value="4">4 rooms</option>
                     </select>
                 </div>
             </div>
@@ -195,7 +195,7 @@
 
     <section id="explore" class="explore">
         <div class="container">
-            <div class="double-heading">
+            <div class="section-heading">
                 <h2>Experience the finest cities</h2>
                 <p>Explore stay or work</p>
             </div>
@@ -261,11 +261,422 @@
             </div>
         </div>
     </section>
+
+    <section id="apartments" class="apartments">
+        <div class="section-heading">
+            <h2>Popular apartments</h2>
+            <p>Our offers are great</p>
+        </div>
+        <div class="apartments__toggle">
+            <input type="radio" name="offer" id="daily" checked>
+            <label for="daily">Per Day</label>
+            <br>
+            <input type="radio" name="offer" id="monthly">
+            <label for="monthly">Per Month</label>
+        </div>
+
+        <div class="apartments__offers">
+            <div class="apartments__offers--daily" id="offers-daily">
+                <div class="apartments__offer apartments__offer--daily">
+                    <div class="offer__head">
+                        <img src="img/apartments/offer-1.jpg" alt="apartment-1">
+                        <div class="offer__overlay">
+                            <p>
+                                <i class="fas fa-bath"></i> 1 Bathroom
+                            </p>
+                            <p>
+                                <i class="fas fa-vector-square"></i> 40m<sup>2</sup>
+                            </p>
+                            <p>
+                                <i class="fas fa-bed"></i> 1 Bedroom
+                            </p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                DELTA, 48 Boulevard Jourdan
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offer__desc">
+                        <p class="offer__localization">London, Britain</p>
+                        <p class="offer__name">
+                            Bedroom Unbeatable
+                        </p>
+                        <p class="offer__price">
+                            From <span class="text-highlight">$30.00</span>
+                        </p>
+                        <div class="offer__fav">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartments__offer apartments__offer--daily">
+                    <div class="offer__head">
+                        <img src="img/apartments/offer-2.jpg" alt="apartment-2">
+                        <div class="offer__overlay">
+                            <p>
+                                <i class="fas fa-bath"></i> 1 Bathroom
+                            </p>
+                            <p>
+                                <i class="fas fa-vector-square"></i> 60m<sup>2</sup>
+                            </p>
+                            <p>
+                                <i class="fas fa-bed"></i> 1 Bedroom
+                            </p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                CHARLOTTENBURG, Haubachstraße 123
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offer__desc">
+                        <p class="offer__localization">Berlin, Germany</p>
+                        <p class="offer__name">
+                            Bedroom Boundless
+                        </p>
+                        <p class="offer__price">
+                            From <span class="text-highlight">$40.00</span>
+                        </p>
+                        <div class="offer__fav">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartments__offer apartments__offer--daily">
+                    <div class="offer__head">
+                        <img src="img/apartments/offer-3.jpg" alt="apartment-1">
+                        <div class="offer__overlay">
+                            <p>
+                                <i class="fas fa-bath"></i> 1 Bathroom
+                            </p>
+                            <p>
+                                <i class="fas fa-vector-square"></i> 80m<sup>2</sup>
+                            </p>
+                            <p>
+                                <i class="fas fa-bed"></i> 2 Bedrooms
+                            </p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                11th DISTRICT, Rue de Belfort 240
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offer__desc">
+                        <p class="offer__localization">Paris, France</p>
+                        <p class="offer__name">
+                            Bedroom Spacious
+                        </p>
+                        <p class="offer__price">
+                            From <span class="text-highlight">$50.00</span>
+                        </p>
+                        <div class="offer__fav">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartments__offer apartments__offer--daily">
+                    <div class="offer__head">
+                        <img src="img/apartments/offer-4.jpg" alt="apartment-1">
+                        <div class="offer__overlay">
+                            <p>
+                                <i class="fas fa-bath"></i> 2 Bathrooms
+                            </p>
+                            <p>
+                                <i class="fas fa-vector-square"></i> 90m<sup>2</sup>
+                            </p>
+                            <p>
+                                <i class="fas fa-bed"></i> 2 Bedrooms
+                            </p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                HORTALEZA, Calle Estíbaliz 200
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offer__desc">
+                        <p class="offer__localization">Madrid, Spain</p>
+                        <p class="offer__name">
+                            Bedroom Subtantial
+                        </p>
+                        <p class="offer__price">
+                            From <span class="text-highlight">$60.00</span>
+                        </p>
+                        <div class="offer__fav">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartments__offer apartments__offer--daily">
+                    <div class="offer__head">
+                        <img src="img/apartments/offer-5.jpg" alt="apartment-1">
+                        <div class="offer__overlay">
+                            <p>
+                                <i class="fas fa-bath"></i> 2 Bathrooms
+                            </p>
+                            <p>
+                                <i class="fas fa-vector-square"></i> 100m<sup>2</sup>
+                            </p>
+                            <p>
+                                <i class="fas fa-bed"></i> 2 Bedrooms
+                            </p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                FREDERIKSBERG, Smallegade 340
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offer__desc">
+                        <p class="offer__localization">Copenhagen, Denmark</p>
+                        <p class="offer__name">
+                            Bedroom Sunshine
+                        </p>
+                        <p class="offer__price">
+                            From <span class="text-highlight">$80.00</span>
+                        </p>
+                        <div class="offer__fav">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartments__offer apartments__offer--daily">
+                    <div class="offer__head">
+                        <img src="img/apartments/offer-6.jpg" alt="apartment-2">
+                        <div class="offer__overlay">
+                            <p>
+                                <i class="fas fa-bath"></i> 2 Bathrooms
+                            </p>
+                            <p>
+                                <i class="fas fa-vector-square"></i> 120m<sup>2</sup>
+                            </p>
+                            <p>
+                                <i class="fas fa-bed"></i> 2 Bedrooms
+                            </p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                GARBATELLA, Via della Moletta 148
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offer__desc">
+                        <p class="offer__localization">Roma, Italy</p>
+                        <p class="offer__name">
+                            Bedroom Superior
+                        </p>
+                        <p class="offer__price">
+                            From <span class="text-highlight">$120.00</span>
+                        </p>
+                        <div class="offer__fav">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="apartments__offers--monthly" id="offers-monthly">
+                <div class="apartments__offer apartments__offer--monthly">
+                    <div class="offer__head">
+                        <img src="img/apartments/offer-5.jpg" alt="apartment-1">
+                        <div class="offer__overlay">
+                            <p>
+                                <i class="fas fa-bath"></i> 2 Bathrooms
+                            </p>
+                            <p>
+                                <i class="fas fa-vector-square"></i> 100m<sup>2</sup>
+                            </p>
+                            <p>
+                                <i class="fas fa-bed"></i> 2 Bedrooms
+                            </p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                FREDERIKSBERG, Smallegade 340
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offer__desc">
+                        <p class="offer__localization">Copenhagen, Denmark</p>
+                        <p class="offer__name">
+                            Bedroom Sunshine
+                        </p>
+                        <p class="offer__price">
+                            From <span class="text-highlight">$1800.00</span>
+                        </p>
+                        <div class="offer__fav">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartments__offer apartments__offer--monthly">
+                    <div class="offer__head">
+                        <img src="img/apartments/offer-6.jpg" alt="apartment-2">
+                        <div class="offer__overlay">
+                            <p>
+                                <i class="fas fa-bath"></i> 2 Bathrooms
+                            </p>
+                            <p>
+                                <i class="fas fa-vector-square"></i> 120m<sup>2</sup>
+                            </p>
+                            <p>
+                                <i class="fas fa-bed"></i> 2 Bedrooms
+                            </p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                GARBATELLA, Via della Moletta 148
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offer__desc">
+                        <p class="offer__localization">Roma, Italy</p>
+                        <p class="offer__name">
+                            Bedroom Superior
+                        </p>
+                        <p class="offer__price">
+                            From <span class="text-highlight">$4000.00</span>
+                        </p>
+                        <div class="offer__fav">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartments__offer apartments__offer--monthly">
+                    <div class="offer__head">
+                        <img src="img/apartments/offer-1.jpg" alt="apartment-1">
+                        <div class="offer__overlay">
+                            <p>
+                                <i class="fas fa-bath"></i> 1 Bathroom
+                            </p>
+                            <p>
+                                <i class="fas fa-vector-square"></i> 40m<sup>2</sup>
+                            </p>
+                            <p>
+                                <i class="fas fa-bed"></i> 1 Bedroom
+                            </p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                DELTA, 48 Boulevard Jourdan
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offer__desc">
+                        <p class="offer__localization">London, Britain</p>
+                        <p class="offer__name">
+                            Bedroom Unbeatable
+                        </p>
+                        <p class="offer__price">
+                            From <span class="text-highlight">$1300.00</span>
+                        </p>
+                        <div class="offer__fav">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartments__offer apartments__offer--monthly">
+                    <div class="offer__head">
+                        <img src="img/apartments/offer-3.jpg" alt="apartment-1">
+                        <div class="offer__overlay">
+                            <p>
+                                <i class="fas fa-bath"></i> 1 Bathroom
+                            </p>
+                            <p>
+                                <i class="fas fa-vector-square"></i> 80m<sup>2</sup>
+                            </p>
+                            <p>
+                                <i class="fas fa-bed"></i> 2 Bedrooms
+                            </p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                11th DISTRICT, Rue de Belfort 240
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offer__desc">
+                        <p class="offer__localization">Paris, France</p>
+                        <p class="offer__name">
+                            Bedroom Spacious
+                        </p>
+                        <p class="offer__price">
+                            From <span class="text-highlight">$1500.00</span>
+                        </p>
+                        <div class="offer__fav">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="apartments__offer apartments__offer--monthly">
+                    <div class="offer__head">
+                        <img src="img/apartments/offer-4.jpg" alt="apartment-1">
+                        <div class="offer__overlay">
+                            <p>
+                                <i class="fas fa-bath"></i> 2 Bathrooms
+                            </p>
+                            <p>
+                                <i class="fas fa-vector-square"></i> 90m<sup>2</sup>
+                            </p>
+                            <p>
+                                <i class="fas fa-bed"></i> 2 Bedrooms
+                            </p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                HORTALEZA, Calle Estíbaliz 200
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offer__desc">
+                        <p class="offer__localization">Madrid, Spain</p>
+                        <p class="offer__name">
+                            Bedroom Subtantial
+                        </p>
+                        <p class="offer__price">
+                            From <span class="text-highlight">$1600.00</span>
+                        </p>
+                        <div class="offer__fav">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="apartments__offer apartments__offer--monthly">
+                    <div class="offer__head">
+                        <img src="img/apartments/offer-2.jpg" alt="apartment-2">
+                        <div class="offer__overlay">
+                            <p>
+                                <i class="fas fa-bath"></i> 1 Bathroom
+                            </p>
+                            <p>
+                                <i class="fas fa-vector-square"></i> 60m<sup>2</sup>
+                            </p>
+                            <p>
+                                <i class="fas fa-bed"></i> 1 Bedroom
+                            </p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                CHARLOTTENBURG, Haubachstraße 123
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offer__desc">
+                        <p class="offer__localization">Berlin, Germany</p>
+                        <p class="offer__name">
+                            Bedroom Boundless
+                        </p>
+                        <p class="offer__price">
+                            From <span class="text-highlight">$1400.00</span>
+                        </p>
+                        <div class="offer__fav">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <!-- build:js -->
     <script src="js/menuToggle.js"></script>
     <script src="js/siema.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/bookCalc.js"></script>
+    <script src="js/offersToggle.js"></script>
     <!-- endbuild -->
 </body>
 

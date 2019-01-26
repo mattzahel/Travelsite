@@ -16,18 +16,18 @@ body {
           box-sizing: border-box;
   min-height: 200vh; }
 
-.double-heading {
+.section-heading {
   text-transform: uppercase;
   position: relative;
   text-align: center;
   min-height: 15rem; }
   @media screen and (min-width: 768px) {
-    .double-heading {
+    .section-heading {
       min-height: 20rem; } }
   @media screen and (min-width: 1200px) {
-    .double-heading {
+    .section-heading {
       min-height: 25rem; } }
-  .double-heading h2 {
+  .section-heading h2 {
     width: 100%;
     font-size: calc(0.02 * 100vw + 1rem);
     color: #2c3e50;
@@ -38,10 +38,10 @@ body {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
     @media screen and (min-width: 1200px) {
-      .double-heading h2 {
+      .section-heading h2 {
         top: 35%;
         font-size: 3.2rem; } }
-  .double-heading p {
+  .section-heading p {
     width: 100%;
     font-size: calc(0.04 * 100vw + 1rem);
     font-weight: 700;
@@ -52,9 +52,12 @@ body {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
     @media screen and (min-width: 1200px) {
-      .double-heading p {
+      .section-heading p {
         top: 20%;
         font-size: 6rem; } }
+
+.text-highlight {
+  color: #4588f2; }
 
 @media screen and (min-width: 1200px) {
   .container {
@@ -321,7 +324,13 @@ body {
 
 .panel-wrapper {
   position: relative;
-  min-height: 25rem; }
+  min-height: 15rem; }
+  @media screen and (min-width: 768px) {
+    .panel-wrapper {
+      min-height: 25rem; } }
+  @media screen and (min-width: 1200px) {
+    .panel-wrapper {
+      min-height: 20rem; } }
 
 .panel {
   -webkit-box-shadow: 0px 2px 10px rgba(102, 102, 102, 0.5);
@@ -358,7 +367,7 @@ body {
   @media screen and (min-width: 1400px) {
     .panel {
       top: -15rem;
-      max-width: 100rem; } }
+      min-width: 120rem; } }
   .panel__heading {
     font-size: 2rem;
     text-align: center;
@@ -496,7 +505,6 @@ body {
       .btn--action {
         font-size: 1.4rem; } }
 
-/* e.g. header */
 .explore {
   padding: 3rem 0; }
   .explore .explore-slider-wrapper {
@@ -514,7 +522,7 @@ body {
         height: 5rem; } }
     .explore__btn--left {
       position: absolute;
-      left: 0;
+      left: 1rem;
       top: 50%;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
@@ -523,7 +531,7 @@ body {
           left: -2.5rem; } }
     .explore__btn--right {
       position: absolute;
-      right: 0;
+      right: 1rem;
       top: 50%;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
@@ -576,6 +584,134 @@ body {
       @media screen and (min-width: 768px) {
         .explore .coming-soon:after {
           font-size: 1.5rem; } }
+
+.apartments__toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .apartments__toggle input[type="radio"] {
+    display: none; }
+  .apartments__toggle label {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer; }
+  .apartments__toggle input[type="radio"]:checked + label {
+    background-color: #4588f2;
+    color: #fff; }
+
+.apartments__offers {
+  padding: 1rem; }
+  @media screen and (min-width: 768px) {
+    .apartments__offers {
+      max-width: 70rem;
+      margin: 1rem auto; } }
+  @media screen and (min-width: 1200px) {
+    .apartments__offers {
+      max-width: 120rem; } }
+  @media screen and (min-width: 768px) {
+    .apartments__offers--daily, .apartments__offers--monthly {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 1rem;
+      grid-row-gap: 1rem; } }
+  .apartments__offers--monthly {
+    display: none; }
+
+.apartments__offer {
+  width: 100%;
+  background-color: #fff;
+  margin: 1.5rem auto; }
+  @media screen and (min-width: 768px) {
+    .apartments__offer {
+      width: 100%; } }
+  .apartments__offer .offer__head {
+    width: 100%;
+    position: relative; }
+    .apartments__offer .offer__head img {
+      max-height: 100%;
+      max-width: 100%;
+      -o-object-fit: contain;
+         object-fit: contain; }
+    .apartments__offer .offer__head:hover .offer__overlay {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+  .apartments__offer .offer__overlay {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.8);
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    padding-bottom: 1rem; }
+    @media screen and (min-width: 1200px) {
+      .apartments__offer .offer__overlay {
+        font-size: 1.4rem; } }
+    .apartments__offer .offer__overlay p {
+      position: relative;
+      line-height: 2.5; }
+    .apartments__offer .offer__overlay p i {
+      margin-right: 1rem;
+      width: 1rem; }
+    .apartments__offer .offer__overlay p:not(:last-child) {
+      font-weight: 600; }
+    .apartments__offer .offer__overlay p:not(:last-child) i {
+      color: #4588f2; }
+  .apartments__offer .offer__desc {
+    width: 100%;
+    line-height: 1.75;
+    position: relative;
+    cursor: pointer; }
+  .apartments__offer .offer__localization {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #2c3e50; }
+  .apartments__offer .offer__name {
+    font-size: 2.1rem;
+    font-weight: 600; }
+  .apartments__offer .offer__price {
+    font-size: 1.6rem; }
+  .apartments__offer .offer__fav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.5rem;
+    color: #fff;
+    position: absolute;
+    top: -2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #aaa;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    cursor: pointer; }
+    .apartments__offer .offer__fav:hover, .apartments__offer .offer__fav:active {
+      background-color: #4588f2; }
 
 /* e.g. home page */
 
