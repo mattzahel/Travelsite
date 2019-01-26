@@ -1,8 +1,8 @@
 const daily = document.getElementById('daily');
 const monthly = document.getElementById('monthly');
 
-dailyOffers = document.getElementById('offers-daily');
-monthlyOffers = document.getElementById('offers-monthly');
+const dailyOffers = document.getElementById('offers-daily');
+const monthlyOffers = document.getElementById('offers-monthly');
 
 daily.addEventListener('click', toggle);
 monthly.addEventListener('click', toggle);
