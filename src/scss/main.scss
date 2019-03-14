@@ -11,9 +11,10 @@
 @import "components/slider";
 @import "components/panel";
 @import "components/button";
+@import "components/client";
 
 @import "layout/header";
 @import "layout/explore";
 @import "layout/apartments";
-
-@import "pages/home";
+@import "layout/banner";
+@import "layout/testimonials";
