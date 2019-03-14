@@ -1,4 +1,18 @@
 .apartments {
+    &__btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+
+        & button {
+            &:hover {
+                border-color: $color-primary;
+                color: $color-primary;
+            }
+        }
+    }
+
     &__toggle {
         display: flex;
         justify-content: center;
@@ -32,7 +46,7 @@
 
         &--daily, &--monthly {
             
-            @media screen and (min-width: $break-md) {
+            @media screen and (min-width: $break-sm) {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-columns: repeat(3, 1fr);

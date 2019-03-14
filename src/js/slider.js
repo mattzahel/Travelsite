@@ -18,3 +18,14 @@ const exploreSiema = new Siema({
 })
 document.querySelector('#explore-prev').addEventListener('click', () => exploreSiema.prev());
 document.querySelector('#explore-next').addEventListener('click', () => exploreSiema.next());
+
+const clientSiema = new Siema({
+    selector: "#siema-testimonials",
+    draggable: true,
+    loop: true,
+    startIndex: 0,
+    perPage: { 320: 1, 768: 2, 1200: 4}
+})
+
+document.querySelector('#client-prev').addEventListener('click', () => clientSiema.prev());
+document.querySelector('#client-next').addEventListener('click', () => clientSiema.next());

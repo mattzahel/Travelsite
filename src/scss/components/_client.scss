@@ -1,0 +1,53 @@
+.client {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    &__photo {
+        border-radius: 50%;
+        height: 10rem;
+        width: 10rem;
+        position: relative;
+        overflow: hidden;
+
+        & img {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 15rem;
+            transform: translateX(-50%);
+        }
+    }
+    &__name {
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: .5rem 0;
+    }
+    &__job {
+        font-size: 1rem;
+        color: $grey-dark;
+        text-transform: uppercase;
+        margin-bottom: .5rem;
+    }
+    &__feedback {
+        text-align: center;
+        padding: 1rem 3rem;
+        font-size: 1.4rem;
+        position: relative;
+        margin-top: 1rem;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            width: 3rem;
+            height: 1px;
+            background-color: $grey-light-2;
+        }
+    }
+}
