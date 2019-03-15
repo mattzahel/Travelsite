@@ -532,19 +532,19 @@ body {
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
   .client__name {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     margin: .5rem 0; }
   .client__job {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #2c3e50;
     text-transform: uppercase;
     margin-bottom: .5rem; }
   .client__feedback {
     text-align: center;
     padding: 1rem 3rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     position: relative;
     margin-top: 1rem; }
     .client__feedback:before {
@@ -691,7 +691,12 @@ body {
 .apartments__offer {
   width: 100%;
   background-color: #fff;
-  margin: 1.5rem auto; }
+  margin: 1.5rem auto;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .apartments__offer:hover {
+    -webkit-box-shadow: 0px 2px 15px #dedede;
+            box-shadow: 0px 2px 15px #dedede; }
   @media screen and (min-width: 768px) {
     .apartments__offer {
       width: 100%; } }
@@ -723,12 +728,9 @@ body {
     height: 100%;
     background-color: rgba(51, 51, 51, 0.8);
     padding-left: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #fff;
     padding-bottom: 1rem; }
-    @media screen and (min-width: 1200px) {
-      .apartments__offer .offer__overlay {
-        font-size: 1.4rem; } }
     .apartments__offer .offer__overlay p {
       position: relative;
       line-height: 2.5; }
@@ -743,7 +745,8 @@ body {
     width: 100%;
     line-height: 1.75;
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    padding: 1rem 0 1rem 1.5rem; }
   .apartments__offer .offer__localization {
     font-size: 1.2rem;
     text-transform: uppercase;
