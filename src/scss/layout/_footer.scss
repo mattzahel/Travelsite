@@ -1,0 +1,124 @@
+.footer {
+    background-color: #040404;
+    padding: 2rem;
+
+    &__col {
+        width: 100%;
+
+        h2 {
+            color: #fefefe;
+            font-size: 2rem;
+            padding: 1rem 0;
+            margin: 1rem 0 2rem 0;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 6rem;
+                height: 100%;
+                border-bottom: 1px solid $grey-light;
+            }
+        } 
+
+        p {
+            color: $grey-light-2;
+            font-size: 1.6rem;
+        }
+    }
+    &__group { 
+        display: flex;
+        margin: 1rem 0;
+
+        & i {
+            font-size: 1.6rem;
+            color: $color-primary;
+            width: 2.5rem;
+        }
+    }
+    &__links {
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+        &--spaced {
+            line-height: 1.75em;
+        }
+
+    }
+    &__link {
+        color: $grey-light-2;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    &__form-wrapper {
+        grid-area: form;
+    }
+    &__form {
+        display: flex;
+        height: 4rem;
+        margin: 1.5rem 0;
+        max-width: 50rem;
+    }
+    &__email {
+        width: 80%;
+        background-color: #fff;
+        border: none;
+        padding: 1rem;
+        border-radius: .5rem 0 0 .5rem;
+        font-size: 1.4rem;
+
+        &::placeholder {
+            color: $grey-light-2;
+        }
+    }
+    &__btn {
+        width: 20%;
+        background-color: $color-primary;
+        border: none;
+        text-transform: uppercase;
+        color: $color-light;
+        font-weight: 700;
+        border-radius: 0 .5rem .5rem 0;
+    }
+
+    &__copyright {
+        width: 100%;
+        color: $grey-light-2;
+        font-size: 1.4rem;
+        grid-area: copy;
+
+        @media screen and (min-width: $break-lg){
+        text-align: center;
+
+        }
+    }
+    
+    @media screen and (min-width: $break-md) {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+            "row row row row"
+            "form form form form"
+            "copy copy copy copy";
+        grid-column-gap: 1rem; 
+        grid-row-gap: 1rem; 
+        padding: 2rem 10%;
+    }
+
+    @media screen and (min-width: $break-lg) {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+        "row row row row form"
+        "copy copy copy copy copy";
+        grid-column-gap: 1rem; 
+        grid-row-gap: 1rem; 
+        padding: 2rem 10%;
+    }
+
+}
