@@ -24,7 +24,7 @@
         left: 50%;
         transform: translateX(-50%);
 
-        max-width: 70rem;
+        max-width: 72rem;
         margin: 1rem auto;
         padding: 3rem 1rem;
         display: grid;
@@ -81,7 +81,7 @@
             padding: .75rem .5rem;
 
             @media screen and (min-width: $break-md) {
-                padding: 1rem .75rem; 
+                padding: 1rem .75rem;
             }
         }
         & select {

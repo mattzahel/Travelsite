@@ -21,7 +21,7 @@ var config = {
     src: 'src/',
     cssin: 'src/css/**/*.css',
     jsin: 'src/js/**/*.js',
-    imgin: 'src/img/**/*.{jpg,jpeg,png,gif}',
+    imgin: 'src/img/**/*.{jpg,jpeg,png,gif,svg}',
     htmlin: 'src/*.html',
     scssin: 'src/scss/**/*.scss',
 
